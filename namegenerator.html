@@ -1,0 +1,39 @@
+<html>
+<head>
+    <script type="text/javascript">
+
+        function randomNumber(maxValue){
+            return Math.floor(Math.random() * maxValue);
+
+        }
+        var firstNames = [];
+        firstNames.push('Heather');
+        firstNames.push('Jackie');
+        firstNames.push('Danielle');
+        firstNames.push('Hunter');
+        firstNames.push('Jared');
+             
+        var lastNames = [];
+
+        lastNames.push('Hogsett');
+        lastNames.push('Wellman');
+        lastNames.push('Goodman');
+        lastNames.push('Johnson');
+        lastNames.push('Adkins');
+    
+        function pickRandomName(ary)
+             {
+                return ary[randomNumber(ary.length)];
+             };
+
+        function makeRandomName(){
+            return pickRandomName(firstNames) +" "+pickRandomName(lastNames);
+        }
+console.log(makeRandomName() );
+
+    </script>
+</head>
+<body>
+    This page is for class coding and notes. Random name generator.
+</body>
+</html>
